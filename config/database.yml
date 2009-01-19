@@ -16,6 +16,6 @@ test:
 production:
     adapter: mysql
     database: learningrails_production
-    username: deploy
-    password: secret
+    username: root
+    password: ballet01
     host: localhost

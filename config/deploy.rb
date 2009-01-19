@@ -1,18 +1,19 @@
 set :application, "learningrails"
-set :deploy_to, "/var/www/apps/#{application}"
+set :deploy_to, "/var/www/sheridanwest/apps/#{application}"
 
-role :app, "sampleapp.learningrails.com"
-role :web, "sampleapp.learningrails.com"
-role :db,  "sampleapp.learningrails.com", :primary => true
+role :app, "mail2.sheridanwest.com"
+role :web, "mail2.sheridanwest.com"
+role :db,  "mail2.sheridanwest.com", :primary => true
 
 default_run_options[:pty] = true
-set :repository,  "git://github.com/mzslater/learning-rails-sample-app.git"
+set :repository,  "git://github.com/sjwest/learning-rails-sample-app.git"
+ # "git://github.com/mzslater/learning-rails-sample-app.git"
 set :scm, "git"
 set :branch, "master"
 set :deploy_via, :remote_cache
 
-set :user, "deploy"
-set :admin_runner, "deploy"
+set :user, "root"
+set :admin_runner, "root"
 
 namespace :deploy do
   desc "Restart Application"
