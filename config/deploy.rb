@@ -6,7 +6,8 @@ role :web, "mail2.sheridanwest.com"
 role :db,  "127.0.0.1", :primary => true
 
 default_run_options[:pty] = true
-set :repository,  "git://github.com/sjwest/learning-rails-sample-app.git"
+set :repository,  "http://github.com/sjwest/learning-rails-sample-app/tree/git@github.com:sjwest/learning-rails-sample-app.git"
+  #"git://github.com/sjwest/learning-rails-sample-app.git"
  # "git://github.com/mzslater/learning-rails-sample-app.git"
 set :scm, "git"
 set :branch, "master"
