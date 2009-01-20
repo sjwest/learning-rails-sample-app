@@ -17,5 +17,5 @@ production:
     adapter: mysql
     database: learningrails_production
     username: lrails
-    password: rogeramjet
+    password: rogerramjet
     host: localhost
