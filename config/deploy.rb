@@ -3,7 +3,7 @@ set :deploy_to, "/var/www/sheridanwest/apps/#{application}"
 
 role :app, "mail2.sheridanwest.com"
 role :web, "mail2.sheridanwest.com"
-role :db,  "mail2.sheridanwest.com", :primary => true
+role :db,  "127.0.0.1", :primary => true
 
 default_run_options[:pty] = true
 set :repository,  "git://github.com/sjwest/learning-rails-sample-app.git"
