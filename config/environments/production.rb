@@ -12,7 +12,7 @@ config.action_controller.consider_all_requests_local = false
 config.action_controller.perform_caching             = true
 
 # issue 2.2.2 bug
-#config.action_view.cache_template_loading            = true
+# config.action_view.cache_template_loading            = true
 # bug
 
 # Enable serving of images, stylesheets, and javascripts from an asset server
