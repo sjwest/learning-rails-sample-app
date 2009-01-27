@@ -12,7 +12,8 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
 
-  config.action_controller.relative_url_root= "/learningrails"
+  # config.action_controller.relative_url_root= "/learningrails"
+  
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.

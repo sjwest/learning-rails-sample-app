@@ -1,5 +1,5 @@
 set :application, "learningrails"
-set :deploy_to, "/var/www/sheridanwest/#{application}"
+set :deploy_to, "/var/www/sheridanwest/apps/#{application}"
 
 role :app, "sheridanwest.com"
 role :web, "sheridanwest.com"
