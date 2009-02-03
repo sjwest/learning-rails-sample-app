@@ -21,6 +21,13 @@ set :scm_verbose,  'true'
 set :rake, '/usr/local/bin/rake'
 
 namespace :deploy do
+  
+  desc "environment.db change permission"
+  #task :after_setup [:web] do
+  #run "cd /var/www/sheridanwest/apps/learningrails/current/config"
+  run "/bin/chown www-data /var/www/sheridanwest/apps/learningrails/current/config/environment.db"
+  #end
+
   desc "Restart Application"
   task :restart, :roles => :app do
     run "touch #{current_path}/tmp/restart.txt"
@@ -30,11 +37,7 @@ namespace :deploy do
   #  # nothing -- need to override default cap start task when using Passenger
   # end
 
-  desc "environment.db change permission"
-  task :after_setup [:web] do
-  run  "cd /var/www/sheridanwestt/apps/learningrails/current/config"
-  run "chown www-data  environment.db"
-  end
+  
   
   
 end
