@@ -29,4 +29,12 @@ namespace :deploy do
   # task :start, :roles => :app do
   #  # nothing -- need to override default cap start task when using Passenger
   # end
+
+  desc "environment.db change permission"
+  task :after_setup [:web] do
+  run  "cd /var/www/sheridanwestt/apps/learningrails/current/config"
+  run "chown www-data  environment.db"
+  end
+  
+  
 end
